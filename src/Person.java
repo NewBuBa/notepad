@@ -4,14 +4,14 @@ public class Person {
     private int id;
     private String name;
     private String surname;
-    private int phone;
+    private String phone;
+
+    public Person() {
+
+    }
 
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -30,11 +30,21 @@ public class Person {
         this.surname = surname;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", phone='" + phone + '\'' +
+                '}';
     }
 }
