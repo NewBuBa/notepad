@@ -7,7 +7,8 @@ public class Person {
     private String phone;
 
     public Person() {
-
+//count++;
+//id =count;
     }
 
     public int getId() {
